@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="834.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.save.crud.UserCrudController">
+   <children>
+      <TableView fx:id="userTable" layoutX="43.0" layoutY="144.0" prefHeight="200.0" prefWidth="748.0" style="-fx-border-style: solid; -fx-border-radius: 7px; -fx-background-radius: 7px;">
+        <columns>
+          <TableColumn fx:id="idColumn" prefWidth="72.80001640319824" text="ID" />
+          <TableColumn fx:id="nameColumn" prefWidth="234.3999481201172" text="Name" />
+            <TableColumn fx:id="addressColumn" prefWidth="212.00006103515625" text="Address" />
+            <TableColumn fx:id="emailColumn" minWidth="0.0" prefWidth="223.99993896484375" text="Email Adress" />
+        </columns>
+      </TableView>
+      <AnchorPane layoutX="143.0" layoutY="35.0" prefHeight="67.0" prefWidth="574.0" style="-fx-background-color: #1a3399; -fx-background-radius: 15px;">
+         <children>
+            <Label layoutX="213.0" layoutY="6.0" text="User List" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="37.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

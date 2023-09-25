@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="558.0" prefWidth="551.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.save.UserController">
+   <children>
+      <Button layoutX="26.0" layoutY="508.0" mnemonicParsing="false" onAction="#gotoLogin" prefHeight="29.0" prefWidth="96.0" style="-fx-background-color: white; -fx-border-style: solid; -fx-border-radius: 7px;" text="Go Back">
+         <graphic>
+            <ImageView fitHeight="26.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/download%20(3).png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Pane layoutX="14.0" layoutY="14.0" prefHeight="66.0" prefWidth="523.0" style="-fx-background-color: #1a3399; -fx-background-radius: 10px; -fx-border-radius: 10px;">
+         <children>
+            <Label layoutX="194.0" layoutY="6.0" text="Register" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="38.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <JFXTextField fx:id="nameTeaxt" labelFloat="true" layoutX="37.0" layoutY="107.0" prefHeight="36.0" prefWidth="489.0" promptText="Enter Your Full Name" unFocusColor="BLACK" />
+      <JFXTextField fx:id="addressText" labelFloat="true" layoutX="37.0" layoutY="166.0" prefHeight="36.0" prefWidth="489.0" promptText="Enter Your Address" unFocusColor="BLACK" />
+      <JFXTextField fx:id="emailText" labelFloat="true" layoutX="37.0" layoutY="227.0" prefHeight="36.0" prefWidth="334.0" promptText="Enter Your Email" unFocusColor="BLACK" />
+      <JFXTextField fx:id="usernameText" labelFloat="true" layoutX="36.0" layoutY="285.0" prefHeight="36.0" prefWidth="234.0" promptText="Create Username" unFocusColor="BLACK" />
+      <JFXButton buttonType="RAISED" layoutX="48.0" layoutY="453.0" onAction="#saveUserDetails" prefHeight="38.0" prefWidth="454.0" style="-fx-background-color: #4d66cc; -fx-background-radius: 7px;" text="Sign up" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+
+      <JFXPasswordField fx:id="passwordText" labelFloat="true" layoutX="36.0" layoutY="347.0" prefHeight="36.0" prefWidth="234.0" promptText="Create Password" unFocusColor="BLACK" />
+      <JFXRadioButton fx:id="agreeradioButton" layoutX="126.0" layoutY="406.0" text="I agree thid terma and conditions">
+         <selectedColor>
+            <Color red="0.11041975021362305" green="0.05364522337913513" blue="0.9052631855010986" />
+         </selectedColor>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXRadioButton>
+      <FontAwesomeIconView glyphName="USER" layoutX="245.0" layoutY="307.0" size="15" />
+      <FontAwesomeIconView glyphName="LOCK" layoutX="245.0" layoutY="369.0" size="15" />
+      <JFXTextField fx:id="idText" labelFloat="true" layoutX="336.0" layoutY="346.0" prefHeight="36.0" prefWidth="190.0" promptText="Create UserID" />
+      <JFXButton buttonType="RAISED" layoutX="231.0" layoutY="514.0" onAction="#updateUser" style="-fx-border-style: solid;" text="Update Users">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="336.0" layoutY="514.0" onAction="#deleteUser" prefHeight="27.0" prefWidth="89.0" style="-fx-border-style: solid;" text="Delete Users">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="440.0" layoutY="514.0" onAction="#getAllUser" style="-fx-border-style: solid;" text="Show Users">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

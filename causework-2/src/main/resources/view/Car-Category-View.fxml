@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="506.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.save.CarcategoryViewController">
+   <children>
+      <AnchorPane layoutX="23.0" layoutY="14.0" prefHeight="78.0" prefWidth="551.0" style="-fx-background-color: #1a3399; -fx-background-radius: 15px;">
+         <children>
+            <Label layoutX="127.0" layoutY="14.0" text="Add Car Category" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="39.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <JFXTextField fx:id="idText" labelFloat="true" layoutX="81.0" layoutY="148.0" prefHeight="36.0" prefWidth="193.0" promptText="Enter  Category ID" />
+      <JFXTextField fx:id="nameText" labelFloat="true" layoutX="81.0" layoutY="225.0" prefHeight="36.0" prefWidth="387.0" promptText="Enter  Category Name" />
+      <JFXButton buttonType="RAISED" layoutX="130.0" layoutY="319.0" onAction="#saveCategory" prefHeight="38.0" prefWidth="340.0" style="-fx-background-color: #1a3399; -fx-background-radius: 7px;" text="Add Category" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="87.0" layoutY="420.0" onAction="#updateCategory" style="-fx-border-style: solid;" text="Update Category">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="245.0" layoutY="420.0" onAction="#deleteCategory" style="-fx-border-style: solid;" text="Delete Category">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="395.0" layoutY="420.0" onAction="#showCategory" style="-fx-border-style: solid;" text="Show Category">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

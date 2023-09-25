@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="487.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.save.crud.CarCrudController">
+   <children>
+      <JFXTextField fx:id="idText" labelFloat="true" layoutX="61.0" layoutY="153.0" prefHeight="35.0" prefWidth="184.0" promptText="Enter Car ID" />
+      <JFXTextField fx:id="categoryText" labelFloat="true" layoutX="259.0" layoutY="345.0" prefHeight="35.0" prefWidth="100.0" promptText="    Category ID" />
+      <JFXTextField fx:id="priceText" labelFloat="true" layoutX="389.0" layoutY="277.0" prefHeight="35.0" prefWidth="184.0" promptText="Per Day Price" />
+      <JFXTextField fx:id="yearText" labelFloat="true" layoutX="61.0" layoutY="277.0" prefHeight="35.0" prefWidth="184.0" promptText="Enter Manufacture Year" />
+      <JFXTextField fx:id="noText" labelFloat="true" layoutX="389.0" layoutY="217.0" prefHeight="35.0" prefWidth="184.0" promptText="Enter Vehicle NO" />
+      <JFXTextField fx:id="modelText" labelFloat="true" layoutX="61.0" layoutY="217.0" prefHeight="35.0" prefWidth="184.0" promptText="Enter Car Model" />
+      <JFXTextField fx:id="brandText" labelFloat="true" layoutX="389.0" layoutY="153.0" prefHeight="35.0" prefWidth="184.0" promptText="Enter Car Brand" />
+      <AnchorPane layoutX="54.0" layoutY="40.0" prefHeight="74.0" prefWidth="510.0" style="-fx-background-color: #1a3399; -fx-background-radius: 15px;">
+         <children>
+            <Label layoutX="160.0" layoutY="8.0" text="Add New Car" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="37.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <JFXButton layoutX="141.0" layoutY="416.0" onAction="#updateCar" prefHeight="27.0" prefWidth="336.0" style="-fx-background-color: #1a3399;" text="Update Car" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

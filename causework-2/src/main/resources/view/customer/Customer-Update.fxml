@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="540.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.save.crud.CustomerCrudController">
+   <children>
+      <Pane layoutX="38.0" layoutY="28.0" prefHeight="66.0" prefWidth="523.0" style="-fx-background-color: #1a3399; -fx-background-radius: 10px; -fx-border-radius: 10px;">
+         <children>
+            <Label layoutX="127.0" layoutY="6.0" text="Update Customer" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="38.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <JFXTextField fx:id="idText" labelFloat="true" layoutX="57.0" layoutY="127.0" prefHeight="36.0" prefWidth="132.0" promptText="Enter CustomerID" unFocusColor="BLACK" />
+      <JFXTextField fx:id="nicText" labelFloat="true" layoutX="57.0" layoutY="186.0" prefHeight="36.0" prefWidth="234.0" promptText="Enter Customer NIC" unFocusColor="BLACK" />
+      <JFXTextField fx:id="nameText" labelFloat="true" layoutX="57.0" layoutY="247.0" prefHeight="36.0" prefWidth="498.0" promptText="Enter Customer Name" unFocusColor="BLACK" />
+      <JFXTextField fx:id="adressText" labelFloat="true" layoutX="56.0" layoutY="305.0" prefHeight="36.0" prefWidth="498.0" promptText="Enter Customer Adress" unFocusColor="BLACK" />
+      <JFXButton buttonType="RAISED" layoutX="60.0" layoutY="452.0" onAction="#updateCustomer" prefHeight="43.0" prefWidth="491.0" style="-fx-background-color: #4d66cc; -fx-background-radius: 7px;" text="Update Customer" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXTextField fx:id="mobilenoText" layoutX="57.0" layoutY="366.0" prefHeight="36.0" prefWidth="234.0" promptText="Enter Mobile NO" />
+   </children>
+</AnchorPane>

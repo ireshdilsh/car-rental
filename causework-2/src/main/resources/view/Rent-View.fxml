@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="501.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.save.RentViewController">
+   <children>
+      <AnchorPane layoutX="52.0" layoutY="14.0" prefHeight="87.0" prefWidth="493.0" style="-fx-background-color: #1a3399; -fx-background-radius: 15px;">
+         <children>
+            <Label layoutX="233.0" layoutY="27.0" text="Rent" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <JFXTextField fx:id="rentidText" labelFloat="true" layoutX="52.0" layoutY="158.0" promptText="RentID" />
+      <JFXTextField fx:id="carIdText" labelFloat="true" layoutX="196.0" layoutY="366.0" promptText="carid" />
+      <JFXTextField fx:id="advancedText" labelFloat="true" layoutX="352.0" layoutY="291.0" promptText="advanced" />
+      <JFXTextField fx:id="depositText" labelFloat="true" layoutX="44.0" layoutY="291.0" promptText="deposit" />
+      <JFXTextField fx:id="balancedText" labelFloat="true" layoutX="375.0" layoutY="238.0" promptText="balanced" />
+      <JFXTextField fx:id="returnText" labelFloat="true" layoutX="52.0" layoutY="225.0" promptText="return" />
+      <JFXTextField fx:id="todateTrext" labelFloat="true" layoutX="363.0" layoutY="171.0" promptText="todate" />
+      <JFXButton layoutX="216.0" layoutY="435.0" onAction="#saveRent" prefHeight="26.0" prefWidth="135.0" style="-fx-border-style: solid;" />
+      <JFXTextField fx:id="peradyRentText" labelFloat="true" layoutX="44.0" layoutY="366.0" promptText="rent" />
+      <JFXTextField fx:id="custidText" labelFloat="true" layoutX="393.0" layoutY="353.0" promptText="custid" />
+      <JFXTextField fx:id="tottal" labelFloat="true" layoutX="216.0" layoutY="212.0" promptText="total" />
+   </children>
+</AnchorPane>

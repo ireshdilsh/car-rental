@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="545.0" prefWidth="586.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.save.CustomerRegisterController">
+   <children>
+      <Pane layoutX="34.0" layoutY="21.0" prefHeight="66.0" prefWidth="523.0" style="-fx-background-color: #1a3399; -fx-background-radius: 10px; -fx-border-radius: 10px;">
+         <children>
+            <Label layoutX="198.0" text="Register" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="38.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <JFXTextField fx:id="idText" labelFloat="true" layoutX="47.0" layoutY="117.0" prefHeight="36.0" prefWidth="132.0" promptText="Enter CustomerID" unFocusColor="BLACK" />
+      <JFXTextField fx:id="nicText" labelFloat="true" layoutX="47.0" layoutY="176.0" prefHeight="36.0" prefWidth="234.0" promptText="Enter Customer NIC" unFocusColor="BLACK" />
+      <JFXTextField fx:id="nameText" labelFloat="true" layoutX="47.0" layoutY="237.0" prefHeight="36.0" prefWidth="498.0" promptText="Enter Customer Name" unFocusColor="BLACK" />
+      <JFXTextField fx:id="adressText" labelFloat="true" layoutX="46.0" layoutY="295.0" prefHeight="36.0" prefWidth="498.0" promptText="Enter Customer Adress" unFocusColor="BLACK" />
+      <JFXButton buttonType="RAISED" layoutX="50.0" layoutY="420.0" onAction="#saveCustomer" prefHeight="43.0" prefWidth="491.0" style="-fx-background-color: #4d66cc; -fx-background-radius: 7px;" text="Add Customer" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXTextField fx:id="mobilenoText" labelFloat="true" layoutX="47.0" layoutY="356.0" prefHeight="36.0" prefWidth="234.0" promptText="Enter Mobile NO" />
+      <JFXButton layoutX="121.0" layoutY="496.0" onAction="#updateCustomer" style="-fx-border-style: solid;" text="Update Customer">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="281.0" layoutY="496.0" onAction="#deleteCustomer" style="-fx-border-style: solid;" text="Delete  Customer">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="440.0" layoutY="496.0" onAction="#showCustomers" style="-fx-border-style: solid;" text="Show Customers">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

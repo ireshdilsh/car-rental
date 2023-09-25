@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="pane1" prefHeight="585.0" prefWidth="846.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <left>
+      <AnchorPane prefHeight="547.0" prefWidth="246.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane layoutX="7.0" layoutY="83.0" prefHeight="476.0" prefWidth="232.0" style="-fx-background-color: #1a0068; -fx-background-radius: 10px;">
+               <children>
+                  <JFXButton buttonType="RAISED" layoutX="26.0" layoutY="14.0" onAction="#gotoUserView" prefHeight="54.0" prefWidth="180.0" style="-fx-background-color: #1a3399;" text="User" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="26.0" layoutY="89.0" onAction="#gotoCustomerView" prefHeight="54.0" prefWidth="180.0" style="-fx-background-color: #1a3399;" text="Customer" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="26.0" layoutY="166.0" onAction="#gotoCarView" prefHeight="54.0" prefWidth="180.0" style="-fx-background-color: #1a3399;" text="Car" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="26.0" layoutY="246.0" onAction="#gotoCarCategoryView" prefHeight="54.0" prefWidth="180.0" style="-fx-background-color: #1a3399;" text="Car Category" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="26.0" layoutY="407.0" onAction="#gotoLogout" prefHeight="54.0" prefWidth="180.0" style="-fx-background-color: #1a3399;" text="Log out" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="26.0" layoutY="326.0" onAction="#gotoRentView" prefHeight="54.0" prefWidth="180.0" style="-fx-background-color: #1a3399;" text="Rent" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <Line endX="100.0" layoutX="116.0" layoutY="80.0" startX="-100.0" stroke="WHITE" />
+                  <Line endX="100.0" layoutX="116.0" layoutY="155.0" startX="-100.0" stroke="WHITE" />
+                  <Line endX="100.0" layoutX="116.0" layoutY="231.0" startX="-100.0" stroke="WHITE" />
+                  <Line endX="100.0" layoutX="116.0" layoutY="313.0" startX="-100.0" stroke="WHITE" />
+                  <Line endX="100.0" layoutX="116.0" layoutY="394.0" startX="-100.0" stroke="WHITE" />
+               </children>
+            </AnchorPane>
+            <Pane layoutX="10.0" layoutY="14.0" prefHeight="56.0" prefWidth="226.0" style="-fx-border-style: solid; -fx-border-radius: 15px;">
+               <children>
+                  <Label layoutX="63.0" layoutY="11.0" text="Dashboard">
+                     <font>
+                        <Font name="Algerian" size="23.0" />
+                     </font>
+                  </Label>
+                  <FontAwesomeIconView glyphName="DASHBOARD" layoutX="14.0" layoutY="34.0" size="30" />
+               </children>
+            </Pane>
+            <Line endX="-99.99996948242188" endY="-255.29998779296875" layoutX="346.0" layoutY="262.0" startX="-99.99995422363281" startY="311.800048828125" />
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <ColorPicker BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

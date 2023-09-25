@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.save.crud.CarCrudController">
+   <children>
+      <AnchorPane layoutX="9.0" layoutY="22.0" prefHeight="66.0" prefWidth="381.0" style="-fx-background-color: #1a3399; -fx-background-radius: 15px;">
+         <children>
+            <Label layoutX="109.0" layoutY="9.0" text="Delete User" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="76.0" layoutY="151.0" text="Enter Car ID This fileld.">
+         <font>
+            <Font name="Impact" size="16.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="idText" labelFloat="true" layoutX="142.0" layoutY="218.0" promptText="Enter Car ID" />
+      <JFXButton buttonType="RAISED" layoutX="28.0" layoutY="305.0" onAction="#deleteCar" prefHeight="38.0" prefWidth="342.0" style="-fx-background-color: #1a3399; -fx-background-radius: 0px;" text="Delete" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
